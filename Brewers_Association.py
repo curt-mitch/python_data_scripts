@@ -17,6 +17,7 @@ for i in xrange(sheet.nrows):
     }
     data.append(state_data)
 
+data.sort(key=lambda x: x['state'])
 
 with open('data/breweries_per_capita.json', 'w') as fp:
   json.dump(data, fp)
