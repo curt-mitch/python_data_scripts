@@ -12,8 +12,8 @@ for i in xrange(sheet.nrows):
   if i > 0 and i < 52:
     state_data = {
       'state': row[0],
-      'breweryCount': row[4],
-      'breweriesPerCapita': row[5]
+      'brewery_count': row[4],
+      'capita_per_brewery': row[5]
     }
     data.append(state_data)
 
